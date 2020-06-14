@@ -34,7 +34,7 @@ public class CollectActivity extends AppCompatActivity {
     mAdapter = new MyAdapter(this);
     lv.setAdapter(mAdapter);
     mAdapter.updateList(sql.getAllCollect());
-
+   // 列表项事件处理
     //ListView单击进入详情
     lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
       @Override
