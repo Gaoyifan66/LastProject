@@ -4,27 +4,28 @@ package com.example.jsoupdemo.utils;
  * Package    :com.example.jsoupdemo
  * ClassName  :DataBean
  * Description:具体房源信息
- * Data       :2020/6/11 14:26
+ * Date       :2020/6/09 14:26
  */
+//定义具体房源信息的databean
 public class DataBean {
-  private int    id;
-  private String title;
-  private String address;
-  private String detailsUrl;
+  private int    id;//id
+  private String title;//标题
+  private String address;//地址
+  private String detailsUrl;//具体网站
 
   public DataBean(int id, String title) {
-    this.id = id;
+   this.id = id;
     this.title = title;
   }
 
   public DataBean(int id, String title, String address, String detailsUrl) {
-    this.id = id;
-    this.title = title;
-    this.address = address;
-    this.detailsUrl = detailsUrl;
+  this.id = id;
+  this.title = title;
+  this.address = address;
+  this.detailsUrl = detailsUrl;
   }
 
-  public DataBean(String title, String address, String detailsUrl) {
+ public DataBean(String title, String address, String detailsUrl) {
     this.title = title;
     this.address = address;
     this.detailsUrl = detailsUrl;

@@ -20,7 +20,7 @@ import java.util.Map;
  * Package    :com.example.jsoupdemo
  * ClassName  :NetUtils
  * Description:网络请求工具类
- * Data       :2020/6/11 10:49
+ * Data       :2020/6/09 10:49
  */
 public class NetUtils {
 
@@ -54,7 +54,7 @@ public class NetUtils {
 
   //子线程通过Jsoup读取安居客列表书库
   //key输入框输入内容
-  //Jsoup使用教程：https://www.jianshu.com/p/fd5caaaa950d
+  //Jsoup使用方法引用自：https://www.jianshu.com/p/fd5caaaa950d
   public void getData(final String key) {
     new Thread() {
       @Override

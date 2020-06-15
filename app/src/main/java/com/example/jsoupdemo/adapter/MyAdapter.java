@@ -11,6 +11,7 @@ import com.example.jsoupdemo.R;
 
 import java.util.ArrayList;
 import java.util.List;
+//自定义适配器，定义方法，帮助将数据显示在view中
 
 public class MyAdapter extends BaseAdapter {
   private List<DataBean> mList;
@@ -38,15 +39,16 @@ public class MyAdapter extends BaseAdapter {
 
   @Override
   public View getView(int position, View convertView, ViewGroup parent) {
-    MyHolder vh = null;
+    MyHolder vh = null;//定义MyHolder
     if (convertView == null) {
       vh = new MyHolder();
+      //创建convertView
       convertView = View.inflate(mContext, R.layout.item, null);
       vh.tv_title = (TextView) convertView.findViewById(R.id.Item_Title);
       vh.tv_address = (TextView) convertView.findViewById(R.id.Item_Address);
       convertView.setTag(vh);
     } else {
-      vh = (MyHolder) convertView.getTag();
+      vh = (MyHolder) convertView.getTag();//不为空则用getTag取出
     }
 
     vh.tv_title.setText(mList.get(position).getTitle());
@@ -67,13 +69,13 @@ public class MyAdapter extends BaseAdapter {
   public void updateList(List<DataBean> list) {
     mList.clear();
     mList.addAll(list);
-    notifyDataSetChanged();
+    notifyDataSetChanged();//利用notifyDataSetChanged()动态更新listview
   }
 
   //移除一条数据并刷新界面
   public void remove(int position) {
     mList.remove(position);
-    notifyDataSetChanged();
+    notifyDataSetChanged();//在历史记录及收藏夹中可以直接调用remove方法
   }
 
   private class MyHolder {

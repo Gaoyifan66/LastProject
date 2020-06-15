@@ -17,7 +17,7 @@ import com.example.jsoupdemo.utils.Utils;
  * Package    :com.example.jsoupdemo
  * ClassName  :InfoActivity
  * Description:个人信息设置
- * Data       :2020/6/11 15:39
+ * Data       :2020/6/14 15:39
  */
 public class InfoActivity extends AppCompatActivity {
   private EditText ed_money_start, ed_money_end, ed_address;
@@ -82,8 +82,8 @@ public class InfoActivity extends AppCompatActivity {
 
     //保存
     btn_save.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
+        @Override
+        public void onClick(View v) {
         String address = ed_address.getText().toString();
         String start = ed_money_start.getText().toString();
         String end = ed_money_end.getText().toString();

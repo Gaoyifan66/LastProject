@@ -17,7 +17,7 @@ import com.example.jsoupdemo.sql.Sql;
  * Package    :com.example.jsoupdemo
  * ClassName  :CollectActivity
  * Description:收藏界面
- * Data       :2020/6/11 15:12
+ * Data       :2020/6/12 15:12
  */
 public class CollectActivity extends AppCompatActivity {
   private ListView  lv;

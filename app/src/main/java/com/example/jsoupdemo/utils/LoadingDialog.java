@@ -6,13 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.jsoupdemo.R;
-
-/**
- * Package    : com.example.myapplication.Dialog
- * ClassName  : PostScoreDialog
- * Description: ${TODO}
- * Date       : 2019/4/13 13:57
- */
+//加载对话框
 public class LoadingDialog {
 
   private       TextView    textView;

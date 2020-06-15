@@ -14,8 +14,11 @@ import java.util.List;
  * Package    :com.example.jsoupdemo.sql
  * ClassName  :Sql
  * Description:数据库建表
- * Data       :2020/6/11 14:52
+ * Date       :2020/6/10 14:52
  */
+//利用所学的SQLite知识建立数据库
+//引用网络代码https://blog.csdn.net/android_zyf/article/details/53420267?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-2
+//在遍历数据库时引用有关Cursor光标的使用
 public class Sql extends SQLiteOpenHelper {
   //类型-收藏
   public static final String COLLECT = "1";

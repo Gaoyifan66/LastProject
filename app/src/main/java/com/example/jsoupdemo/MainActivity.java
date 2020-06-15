@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
   private LoadingDialog loading;
   private ListView      lv;
   private MyAdapter     mAdapter;
-  private Sql           sql;
+  private Sql           sql;//类的变量
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
